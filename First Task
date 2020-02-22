@@ -1,0 +1,30 @@
+package first_task;
+
+import java.util.*;
+
+public class FirstScript {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double fnumber;
+	double snumber;
+	char operator;
+	double result;
+Scanner input = new Scanner (System.in); 
+System.out.print("Please enter the first number");
+fnumber = input.nextDouble();
+Scanner inputop = new Scanner (System.in);
+System.out.print("Please enter the operator");
+operator = (char) inputop.next().charAt(0);
+System.out.print("Please enter the second number");
+snumber = input.nextDouble();
+if (operator == '+') { result = fnumber + snumber;}
+else if ( operator == '-') { result = fnumber - snumber;}
+else if ( operator == '*') { result = fnumber * snumber;}
+else if ( operator == '/') { result = fnumber / snumber;}
+else { result = fnumber % snumber;}
+System.out.print("The result is" + result);
+
+}
+
+}
